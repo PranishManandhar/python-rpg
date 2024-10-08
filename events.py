@@ -17,7 +17,7 @@ def events(player):
 
         player.hp -= hploss
         player.food -= foodloss
-        print(f"you were attacked by bandits and lost {player.food} food and {player.coins} coins")
+        print(f"you were attacked by bandits and lost {foodloss} food and {hploss} hp")
 
     if events == "dropped Resources":
         coinloss = random.randint(10,30)
@@ -25,7 +25,7 @@ def events(player):
 
         player.coins -= coinloss
         player.food -= foodloss
-        print(f"you dropped some resoruces and lost {player.food} food and {player.coins} coins")
+        print(f"you dropped some resoruces and lost {foodloss} food and {coinloss} coins")
 
     if events == "nothing":
         print(nothingScene[random.randint(0,3)])
