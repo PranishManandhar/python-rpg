@@ -6,7 +6,7 @@ class Player:
         self.hp = 100
         self.coins = 200
         self.energy = 100
-        self.food = 10
+        self.food = 20
         self.distance = 0
 
     def status(self):
@@ -23,7 +23,7 @@ class Player:
         self.energy -= random.randint(10,20)
         self.distance += travelled
         self.check_health()
-        print(f"you have {100-self.distance} meters left to travell")
+        print(f"you have {100-self.distance} meters left to travel")
 
     def check_health(self):
         if self.food <= 0:
