@@ -32,7 +32,8 @@ class Player:
             self.hp -= hp_loss
             print(f"your food is now empty, your health has been reduced by {hp_loss}")
         
-        if self.energy <= 0:
+        if self.energy <= 0 or self.hp ==0:
             self.energy = 0
             self.hp = 0
             print(f"you were so tired that you fell on the road. Another Traveller found you dead and buried you at a nearby cemetery")
+            

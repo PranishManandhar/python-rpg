@@ -1,7 +1,7 @@
 import random
 
 def events(player):
-    events = ["storm","bandits","dropped Resources","nothing"]
+    events = random.choice(["storm","bandits","dropped Resources","nothing"])
     nothingScene = ["you heard the wind flowing by as you thought about the way you still have to go",
                     "you found the day to be very calm and thought about the journey ahead",
                     "the empty road made you think that you might just have taken the wrong day to travel",

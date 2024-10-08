@@ -23,7 +23,7 @@ def game():
         player.status()
 
         action = input("\nWhat would you like to do?")
-
+        print("\n")
         if action == "travel":
             player.Travels()
             events(player)
